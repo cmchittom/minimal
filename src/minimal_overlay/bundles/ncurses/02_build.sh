@@ -52,7 +52,7 @@ echo "Installing '$BUNDLE_NAME'."
 make -j $NUM_JOBS install DESTDIR=$DEST_DIR
 
 # Symnlink wide character libraries
-cd $DEST_DIR/usr/lib
+cd $DEST_DIR/usr/lib64
 ln -s libncursesw.so.5 libncurses.so.5
 ln -s libncurses.so.5 libncurses.so
 ln -s libtinfow.so.5 libtinfo.so.5
